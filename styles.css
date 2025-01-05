@@ -1,0 +1,148 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* Organiza elementos em uma coluna */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white; /* Define a cor do texto como branca */
+}
+
+/* Garante que o body preencha toda a janela */
+html, body {
+  height: 100%;
+}
+
+/* Define cores de fundo para os modos */
+body.pomodoro-mode {
+  background-color: #ff6347; /* Tomato */
+}
+
+body.short-break-mode {
+  background-color: #00ffff; /* Cyan */
+}
+
+body.long-break-mode {
+  background-color: #0000ff; /* Blue */
+}
+
+/* Define cores do container para os modos */
+.pomodoro-mode .container {
+  background-color: #eea571; /* Tomate suave */
+}
+
+.short-break-mode .container {
+  background-color: #2ca7a7; /* Cyan suave */
+}
+
+.long-break-mode .container {
+  background-color: #5571aa; /* Azul suave */
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  border-radius: 50px;
+  width: 100%;
+  max-width: 800px; /* Ajuste a largura máxima conforme necessário */
+  margin-bottom: 20px; /* Adiciona margem inferior */
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.task-input {
+  text-align: left;
+  width: 100%;
+  max-width: 800px; /* Ajuste a largura máxima conforme necessário */
+}
+
+.task-input label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: white; /* Cor do texto da label */
+}
+
+.task-input input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-input button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #555;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.task-input button:hover {
+  background-color: #777;
+}
+
+.task-input button:active {
+  background-color: #999;
+}
+
+.task-list {
+  margin-top: 20px;
+  padding: 10px;
+  border: 2px solid #555; /* Adiciona uma borda à lista de tarefas */
+  border-radius: 5px;
+  max-height: 200px;
+  overflow-y: auto; /* Adiciona rolagem se necessário */
+  background-color: #fff;
+  color: #000;
+}
+
+.task-item {
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+.task-item:last-child {
+  border-bottom: none;
+}
+
+.timer-section {
+  flex: 1; /* O cronômetro ocupa uma parte proporcional */
+  text-align: center;
+}
+
+.timer-display {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #555; /* Botões com fundo cinza */
+  color: white; /* Texto dos botões branco */
+}
+
+button:hover {
+  background-color: #777;
+}
+
+button:active {
+  background-color: #999;
+}
+
